@@ -54,9 +54,10 @@ The goal of this task is to **build a Decision Tree Classifier** to predict whet
 ## 📂 Repository Structure
 
 PRODIGY_DS_03/
-├── bank.ipynb              # Notebook with code and analysis
-├── decision_tree.pdf       # Visualization of trained decision tree
-└── README.md               # Documentation
+├── bank.ipynb
+├── decision_tree.pdf
+└── README.md
+
 
 
 ## 🚀 How to Run
