@@ -2,67 +2,66 @@
 "Built and evaluated a Decision Tree Classifier on Bank Marketing dataset achieving X% accuracy, with visualized decision paths."
 
 
-# Task 03: Decision Tree Classifier (Bank Marketing Dataset)
-# 📌 Project Overview
+# PRODIGY_DS_03 - Decision Tree Classifier (Bank Marketing Dataset)
 
-This project builds a Decision Tree Classifier to predict whether a customer will subscribe to a term deposit based on demographic and marketing campaign data.
+## 🎯 Objective
+The goal of this task is to **build a Decision Tree Classifier** to predict whether a customer will subscribe to a term deposit based on their **demographic and behavioral data** using the **Bank Marketing dataset** from the UCI Machine Learning Repository.
 
-# 🛠️ Workflow
+---
 
-Dataset Setup
+## 🛠 Workflow
 
-Loaded Bank Marketing dataset (UCI Repository).
+### 1. Load Dataset
+- Used the **Bank Marketing dataset**.
+- Inspected shape, columns, and data types.
 
-Checked structure, types, and missing values.
+### 2. Data Preprocessing
+- Encoded categorical variables (`job`, `marital`, `education`, `contact`, `month`, etc.) using Label Encoding.
+- Converted target column `y` → **(Yes = 1, No = 0)**.
+- Split data into **training (80%)** and **testing (20%)**.
 
-Preprocessing
+### 3. Model Building
+- Used **DecisionTreeClassifier** from `scikit-learn`.
+- Limited `max_depth` to prevent overfitting.
+- Trained the model on training data.
 
-Encoded categorical variables using Label Encoding.
+### 4. Model Evaluation
+- Calculated **Accuracy, Precision, Recall, F1-score**.
+- Generated a **Confusion Matrix** to evaluate classification performance.
+- Analyzed **Feature Importances** to understand key predictors.
 
-Split dataset into features (X) and target (y).
+### 5. Visualization
+- Exported the tree using `export_graphviz`.
+- Visualized the decision tree with **Graphviz** and `plot_tree`.
 
-# Train-Test Split
+---
 
-Divided dataset into 80% training and 20% testing sets.
+## 📊 Key Insights
+- **Duration** of the call and **previous campaign outcome** were highly predictive.
+- Customer **age** and **job type** also influenced subscription probability.
+- Decision Tree provided interpretable rules for customer targeting.
 
-# Model Training
+---
 
-Trained a DecisionTreeClassifier with controlled depth to avoid overfitting.
+## 💻 Tech Stack
+- **Python** (Pandas, NumPy, Scikit-Learn)
+- **Matplotlib / Seaborn**
+- **Graphviz** (for decision tree visualization)
+- **Jupyter Notebook**
 
-Model Evaluation
+---
 
-Accuracy Score
+## 📂 Repository Structure
+PRODIGY_DS_03/
+│── bank.ipynb # Notebook with code and analysis
+│── decision_tree.pdf # Visualization of trained tree
+│── README.md # Documentation
 
-Classification Report (Precision, Recall, F1-score)
+## 🚀 How to Run
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/thejasuryachar11/PRODIGY_DS_03.git
+   cd PRODIGY_DS_03
+   jupyter notebook bank.ipynb
 
-Confusion Matrix
 
-# Visualization
-
-Visualized the decision tree using plot_tree.
-
-Insights
-
-Decision Tree identified key features (e.g., age, balance, duration) influencing customer subscription.
-
-Achieved reasonable accuracy on test data.
-
-# 🛠️ Tools & Libraries
-
-Python (Google Colab / Jupyter Notebook)
-
-pandas, numpy
-
-scikit-learn (DecisionTreeClassifier, train_test_split, metrics)
-
-matplotlib, seaborn
-
-# 📊 Deliverables
-
-Cleaned & preprocessed dataset
-
-Decision Tree Classifier model
-
-Model evaluation metrics
-
-Decision Tree visualization
