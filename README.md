@@ -52,7 +52,7 @@ The goal of this task is to **build a Decision Tree Classifier** to predict whet
 ---
 
 ## 📂 Repository Structure
-
+```bash
 PRODIGY_DS_03/
 ├── bank.ipynb
 ├── decision_tree.pdf
