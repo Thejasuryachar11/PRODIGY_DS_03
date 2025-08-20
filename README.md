@@ -52,11 +52,12 @@ The goal of this task is to **build a Decision Tree Classifier** to predict whet
 ---
 
 ## 📂 Repository Structure
-'''bash
+
 PRODIGY_DS_03/
-│── bank.ipynb # Notebook with code and analysis
-│── decision_tree.pdf # Visualization of trained tree
-│── README.md # Documentation
+├── bank.ipynb              # Notebook with code and analysis
+├── decision_tree.pdf       # Visualization of trained decision tree
+└── README.md               # Documentation
+
 
 ## 🚀 How to Run
 1. Clone the repository:
